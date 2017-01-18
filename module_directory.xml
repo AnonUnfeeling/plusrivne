@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_directory" default="compile.module.directory">
+  <dirname property="module.directory.basedir" file="${ant.file.module_directory}"/>
+  
+  <property name="module.jdk.home.directory" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.directory" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.directory" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.directory" value="-encoding UTF-8 -source 1.7 -target 1.7 ${compiler.args}"/>
+  
+  <property name="directory.output.dir" value="${module.directory.basedir}/build/classes/production/Directory"/>
+  <property name="directory.testoutput.dir" value="${module.directory.basedir}/build/classes/test/Directory"/>
+  
+  <path id="directory.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="directory.module.production.classpath">
+    <path refid="${module.jdk.classpath.directory}"/>
+  </path>
+  
+  <path id="directory.runtime.production.module.classpath">
+    <pathelement location="${directory.output.dir}"/>
+  </path>
+  
+  <path id="directory.module.classpath">
+    <path refid="${module.jdk.classpath.directory}"/>
+    <pathelement location="${directory.output.dir}"/>
+  </path>
+  
+  <path id="directory.runtime.module.classpath">
+    <pathelement location="${directory.testoutput.dir}"/>
+    <pathelement location="${directory.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.directory">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.directory">
+    <patternset refid="excluded.from.module.directory"/>
+  </patternset>
+  
+  
+  <target name="compile.module.directory" depends="compile.module.directory.production,compile.module.directory.tests" description="Compile module Directory"/>
+  
+  <target name="compile.module.directory.production" depends="register.custom.compilers" description="Compile module Directory; production classes"/>
+  
+  <target name="compile.module.directory.tests" depends="register.custom.compilers,compile.module.directory.production" description="compile module Directory; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.directory" description="cleanup module">
+    <delete dir="${directory.output.dir}"/>
+    <delete dir="${directory.testoutput.dir}"/>
+  </target>
+</project>

@@ -1,0 +1,23 @@
+<RelativeLayout android:id="@+id/tags"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/gallery"
+    android:layout_marginTop="5dp"
+    android:background="@android:color/white"
+    android:layout_marginLeft="7dp"
+    android:layout_marginRight="7dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="17sp"
+        android:text="Реклама\nАудіозапис"
+        android:id="@+id/tag"
+        android:layout_marginLeft="18dp"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp" />
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\tЯкщо ви, щодо цього додатку:\n- маєте запитання чи пропозиції,\n- бажаєте розмістити рекламу,\n- хочете видалити контакт,\n- інше\n \tнапишіть нам, будь-ласка"
+        android:textSize="17sp"
+        android:layout_margin="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:id="@+id/email"
+        android:hint="Ваша e-mail адреса"
+        android:layout_margin="5dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:id="@+id/message"
+        android:hint="Текст листа"
+        android:layout_margin="5dp" />
+
+</LinearLayout>

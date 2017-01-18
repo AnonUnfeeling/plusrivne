@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/rivne_about1"
+        android:scaleType="fitCenter"
+        android:background="#e2e3e3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:text="skip"
+        android:id="@+id/skin"
+        android:singleLine="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:paddingRight="35dp" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/nextPage"
+        android:background="@drawable/arrow_next"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:text="@string/open_app"
+        android:id="@+id/close_about"
+        android:singleLine="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" />
+
+</RelativeLayout>

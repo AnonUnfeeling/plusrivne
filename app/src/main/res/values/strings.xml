@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">[+]Рівне</string>
+    <!--<string name="app_name">[+]Гоща</string>-->
+    <!--<string name="app_name">[+]Луцьк</string>-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="follower">Обрані</string>
+    <string name="yst">Держ.органи, установи</string>
+    <string name="add_contact">Додати контакт</string>
+    <string name="reclam">Зворотній зв\'язок</string>
+
+    <string name="city">порекомендуйте [+]Рівне</string>
+    <!--<string name="city">порекомендуйте [+]Гоща</string>-->
+
+    <string name="about_as">Про додаток</string>
+    <string name="name">Назва</string>
+    <string name="category">Категорія</string>
+    <string name="find">Пошук</string>
+    <string name="important">Важливі контакти</string>
+    <string name="follower_contact">Обрані контакти</string>
+    <string name="base_url">http://wikkno.com/api/getdata.php</string>
+    <string name="derj">держ.органи, установи</string>
+
+    <string name="rajon">rajonRivne</string>
+    <string name="allCategories">allCategoriesRivne</string>
+    <string name="allClients">allClientsRivne</string>
+    <string name="ads">adsRivne</string>
+    <string name="date">dateRivne</string>
+    <string name="followersRivne">followersRivne</string>
+
+    <!--<string name="rajon">rajonHoshcha</string>-->
+    <!--<string name="allCategories">allCategoriesHoshcha</string>-->
+    <!--<string name="allClients">allClientsHoshcha</string>-->
+    <!--<string name="ads">adsHoshcha</string>-->
+    <!--<string name="date">dateHoshcha</string>-->
+    <!--<string name="followersRivne">followersHoshcha</string>-->
+
+    <string name="rajonQuery">Рівненський</string>
+    <!--<string name="rajonQuery">Гощанський</string>-->
+    <!--<string name="rajonQuery">Луцький</string>-->
+
+    <string name="clientsQuery">Рівне,Рівненський,Рівненська</string>
+    <!--<string name="clientsQuery">Гоща,Гощанський,Рівненська</string>-->
+    <!--<string name="clientsQuery">Луцьк,Луцький,Волинська</string>-->
+
+    <string name="open_app">відкрити [+]Рівне</string>
+    <!--<string name="open_app">відкрити [+]Гоща</string>-->
+    <!--<string name="open_app">відкрити [+]Луцьк</string>-->
+
+    <string name="linkPlayMarket">https://play.google.com/store/apps/details?id=ua.jdroidcoder</string>
+    <string name="showRajon">увімк. Рівненський район</string>
+    <string name="partners">Наші партнери</string>
+    <string name="categoriesQuery">Рівненський,Рівненська</string>
+</resources>
+

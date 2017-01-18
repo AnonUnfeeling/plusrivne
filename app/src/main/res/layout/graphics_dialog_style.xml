@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/pn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Понеділок" />
+
+        <CheckBox
+            android:id="@+id/monday_not_wirk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp" />
+
+        <TextView
+            android:id="@+id/beginMonday"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/pn"
+            android:text="9-00" />
+
+        <TextView
+            android:id="@+id/endMonday"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dp"
+            android:text="18-00"
+            android:inputType="none"
+            android:layout_toRightOf="@+id/beginMonday" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/vt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Вівторок" />
+
+        <TextView
+            android:id="@+id/beginTuesday"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:layout_toRightOf="@+id/vt"
+            android:text="9-00"
+            android:inputType="none" />
+
+        <TextView
+            android:id="@+id/endTuesday"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dp"
+            android:text="18-00"
+            android:inputType="none"
+            android:layout_toRightOf="@+id/beginTuesday" />
+
+        <CheckBox
+            android:id="@+id/tuesday_not_wirk"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:id="@+id/sr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Середа" />
+
+        <TextView
+            android:id="@+id/beginWednesday"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_toRightOf="@+id/sr"
+            android:text="9-00"
+            android:inputType="none" />
+
+        <TextView
+            android:id="@+id/endWednesday"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dp"
+            android:text="18-00"
+            android:inputType="none"
+            android:layout_toRightOf="@+id/beginWednesday" />
+
+        <CheckBox
+            android:id="@+id/wednesday_not_wirk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:id="@+id/cht"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Четвер" />
+
+        <TextView
+            android:id="@+id/beginThursday"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_toRightOf="@+id/cht"
+            android:text="9-00"
+            android:inputType="none" />
+
+        <TextView
+            android:id="@+id/endThursday"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dp"
+            android:text="18-00"
+            android:inputType="none"
+            android:layout_toRightOf="@+id/beginThursday" />
+
+        <CheckBox
+            android:id="@+id/thursday_not_wirk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:id="@+id/pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="П'ятниця" />
+
+        <TextView
+            style="@style/Widget.AppCompat.EditText"
+            android:id="@+id/beginFriday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:layout_toRightOf="@+id/pt"
+            android:text="9-00"
+            android:inputType="none" />
+
+        <TextView
+            style="@style/Widget.AppCompat.EditText"
+            android:id="@+id/endFriday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dp"
+            android:text="18-00"
+            android:inputType="none"
+            android:layout_toRightOf="@+id/beginFriday" />
+
+        <CheckBox
+            android:id="@+id/friday_not_wirk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:id="@+id/sb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Субота" />
+
+        <TextView
+            style="@style/Widget.AppCompat.EditText"
+            android:id="@+id/beginSaturday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="39dp"
+            android:layout_toRightOf="@+id/sb"
+            android:hint="9-00"
+            android:inputType="none" />
+
+        <TextView
+            style="@style/Widget.AppCompat.EditText"
+            android:id="@+id/endSaturday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dp"
+            android:hint="18-00"
+            android:inputType="none"
+            android:layout_toRightOf="@+id/beginSaturday" />
+
+        <CheckBox
+            android:id="@+id/saturday_not_wirk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:id="@+id/nd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Неділя" />
+
+        <TextView
+            style="@style/Widget.AppCompat.EditText"
+            android:id="@+id/beginSunday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="39dp"
+            android:layout_toRightOf="@+id/nd"
+            android:hint="9-00"
+            android:inputType="none" />
+
+        <TextView
+            style="@style/Widget.AppCompat.EditText"
+            android:id="@+id/endSunday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dp"
+            android:hint="18-00"
+            android:inputType="none"
+            android:layout_toRightOf="@+id/beginSunday" />
+
+        <CheckBox
+            android:id="@+id/sunday_not_wirk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp" />
+
+    </RelativeLayout>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:checked="true"
+        android:text="- Вихідний день"
+        android:clickable="false" />
+
+</LinearLayout>

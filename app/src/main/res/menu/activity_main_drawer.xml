@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/important"
+            android:icon="@drawable/important"
+            android:title="@string/important" />
+
+        <!--<item-->
+        <!--android:id="@+id/follower"-->
+        <!--android:icon="@drawable/business"-->
+        <!--android:title="@string/yst" />-->
+
+        <item
+            android:id="@+id/follower"
+            android:icon="@drawable/business"
+            android:title="@string/yst" />
+
+        <item
+            android:id="@+id/add_contact"
+            android:icon="@drawable/ic_add_black_24dp"
+            android:title="@string/add_contact" />
+
+        <item
+            android:id="@+id/callback"
+            android:icon="@drawable/callback"
+            android:title="@string/reclam" />
+
+        <item
+            android:id="@+id/shareApp"
+            android:icon="@drawable/arrow"
+            android:title="@string/city" />
+
+        <item
+            android:id="@+id/about_as"
+            android:icon="@drawable/about_as"
+            android:title="@string/about_as" />
+
+        <item
+            android:id="@+id/partners"
+            android:title="@string/partners"
+            android:icon="@drawable/partners"/>
+
+    </group>
+
+</menu>
